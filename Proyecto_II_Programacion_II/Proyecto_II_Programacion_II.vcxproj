@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Catalogo.cpp" />
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Componente.cpp" />
     <ClCompile Include="Empresa.cpp" />
@@ -147,8 +148,11 @@
     <ClCompile Include="Parlante.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Procesador.cpp" />
+    <ClCompile Include="Sistema.cpp" />
+    <ClCompile Include="Tienda.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Catalogo.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="Componente.h" />
     <ClInclude Include="Empresa.h" />
@@ -156,6 +160,8 @@
     <ClInclude Include="Parlante.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Procesador.h" />
+    <ClInclude Include="Sistema.h" />
+    <ClInclude Include="Tienda.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

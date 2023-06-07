@@ -39,6 +39,15 @@
     <ClCompile Include="Persona.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Catalogo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sistema.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tienda.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Componente.h">
@@ -60,6 +69,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Persona.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Catalogo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sistema.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tienda.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
