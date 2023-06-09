@@ -1,5 +1,9 @@
 #include "Fuente.h"
 
+Fuente::Fuente() : Componente()
+{
+}
+
 Fuente::Fuente(string cat, string com, string mod, string car, double pre) : Componente(cat,com,mod,car,pre) {
 
 }

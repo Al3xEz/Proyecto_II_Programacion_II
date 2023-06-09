@@ -5,7 +5,6 @@ class Empresa : public Cliente
 {
 private:
 	string nombreEmpresa;
-	string cedulaJuridica;
 
 public:
 	Empresa();
@@ -14,11 +13,9 @@ public:
 
 	// Getters
 	string getNombreEmpresa();
-	string getCedulaJuridica();
 
 	// Setters
 	void setNombreEmpresa(string);
-	void setCedulaJuridica(string);
 
 	// toString
 	string toString();

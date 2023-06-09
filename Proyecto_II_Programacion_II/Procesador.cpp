@@ -1,5 +1,9 @@
 #include "Procesador.h"
 
+Procesador::Procesador() : Componente()
+{
+}
+
 Procesador::Procesador(string cat, string com, string mod, string car, double pre) : Componente(cat, com, mod, car, pre) {
 
 }

@@ -5,26 +5,22 @@
 class Persona : public Cliente
 {
 private:
-	string cedula;
 	string email;
 	string nacionalidad;
-public:
 
+public:
 	Persona();
 	Persona(string, string, string, string, string);
 	~Persona();
 
 	// Getters
-	string getCedula();
 	string getEmail();
 	string getNacionalidad();
 
 	// Setters
-	void setCedula(string);
 	void setEmail(string);
 	void setNacionalidad(string);
 
 	// toString
 	string toString();
 };
-

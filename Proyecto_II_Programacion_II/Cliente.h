@@ -1,6 +1,3 @@
-#ifndef CLIENTE_H
-#define CLIENTE_H
-
 #pragma once
 
 #include <iostream>
@@ -11,24 +8,25 @@ using namespace std;
 class Cliente
 {
 protected:
+	string cedula;
 	string nombrePais;
 	string ciudadUbicacion;
 
 public:
 	Cliente();
-	Cliente(string, string);
+	Cliente(string,string, string);
 	~Cliente();
 
 	// Getters
+	string getCedula();
 	string getNombrePais();
 	string getCiudadUbicacion();
 
 	// Setters
+	void setCedula(string);
 	void setNombrePais(string);
 	void setCiudadUbicacion(string);
 
 	// toString
 	virtual string toString() = 0;
 };
-
-#endif

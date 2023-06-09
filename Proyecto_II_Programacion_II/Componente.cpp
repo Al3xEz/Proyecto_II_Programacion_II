@@ -1,5 +1,14 @@
 #include "Componente.h"
 
+Componente::Componente()
+{
+	categoria = "";
+	componente = "";
+	modelo = "";
+	caracteristica = "";
+	precioBase = 0;
+}
+
 Componente::Componente(string cat, string com, string mod, string car, double pre) {
 	categoria = cat;
 	componente = com;

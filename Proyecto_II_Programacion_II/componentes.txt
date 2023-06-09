@@ -1,0 +1,41 @@
+Fuente de audio	Unidad CD	OA966	Unidad basica	100.00
+Fuente de audio	Unidad CD	VG953	Proteccion de salto	150.00
+Fuente de audio	Unidad CD	UK404	Múltiples velocidades	175.00
+Fuente de audio	Unidad CD	SE381	Soporte SACD	200.00
+Fuente de audio	Tornamesa	LE978	Unidad basica	33/45 RPM	180.00
+Fuente de audio	Tornamesa	ED991	Soporte	78 RPM	230.00
+Fuente de audio	Tornamesa	NQ233	Brazo automatico	320.00
+Fuente de audio	Radio	LR506	Basico	AM/FM	90.00
+Fuente de audio	Radio	BR101	Onda corta	300.00
+Fuente de audio	Radio	IL414	Sintonizador automatico	220.00
+Fuente de audio	Radio	TE655	Sintonizador programable	280.00
+Fuente de audio	Unidad Bluetooth	NA107	Basico	70.00
+Fuente de audio	Unidad Bluetooth	WI307	Multicanal	100.00
+Fuente de audio	Unidad Bluetooth	WG255	Receptor FM	90.00
+Fuente de audio	Microfono	UT654	Alambrico	90.00
+Fuente de audio	Microfono	SD353	Alambrico omnidireccional	95.00
+Fuente de audio	Microfono	HR568	Inalambrico	120.00
+Fuente de audio	Microfono	KC176	Inalambrico	rango ampliado	180.00
+Fuente de audio	Microfono	QU632	Inalambrico	Bluetooth	100.00
+Procesador de audio	Amplificador	IR302	80W	90.00
+Procesador de audio	Amplificador	CV136	100W	115.00
+Procesador de audio	Amplificador	WU205	200W	140.00
+Procesador de audio	Amplificador	AG226	220W	165.00
+Procesador de audio	Amplificador	ZU516	400W	190.00
+Procesador de audio	Mezclador	JL664	2 canales analogicos	70.00
+Procesador de audio	Mezclador	EA934	2 canales digitales	85.00
+Procesador de audio	Mezclador	XO640	4 canales analogicos	130.00
+Procesador de audio	Mezclador	UR549	4 canales digitales	150.00
+Procesador de audio	Mezclador	IU702	8 canales (digital/analogico)	325.00
+Parlante	Parlante	CQ811	200W	235.00
+Parlante	Parlante	NZ586	400W	275.00
+Parlante	Parlante	LV428	400W perfil plano	315.00
+Parlante	Parlante	OL625	400W inalambrico	355.00
+Parlante	Parlante	TQ931	300W 4 canales	395.00
+Parlante	Parlante	FD238	280W subwoofer	435.00
+Parlante	Audifono	YN192	Basico (intraural)	20.00
+Parlante	Audifono	EO771	Basico (supraural. diadema)	40.00
+Parlante	Audifono	VT518	Basico (circumaural)	45.00
+Parlante	Audifono	HE757	Basico (inalambrico)	60.00
+Parlante	Audifono	TP788	Circumaural bajos profundos	90.00
+Parlante	Audifono	HT856	Inalambrico bajos profundos	120.00

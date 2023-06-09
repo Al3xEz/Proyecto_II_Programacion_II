@@ -1,5 +1,9 @@
 #include "Parlante.h"
 
+Parlante::Parlante() : Componente()
+{
+}
+
 Parlante::Parlante(string cat, string com, string mod, string car, double pre) : Componente(cat, com, mod, car, pre) {
 
 }
