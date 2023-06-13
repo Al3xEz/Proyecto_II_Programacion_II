@@ -7,7 +7,7 @@
 class Sistema
 {
 private:
-	string id;
+	string cod;
 	Componente* fuente;
 	Componente* procesador;
 	Componente* parlante;
@@ -16,14 +16,15 @@ private:
 public:
 	Sistema();
 	Sistema(string, Componente*, Componente*, Componente*);
+	Sistema(Componente*, Componente*, Componente*);
 	~Sistema();
 
-	string getId();
+	string getCod();
 	string getModeloFuente();
 	string getModeloProcesador();
 	string getModeloParlante();
 	double getPrecio();
 
 	string toString();
-
+	string toString2();
 };

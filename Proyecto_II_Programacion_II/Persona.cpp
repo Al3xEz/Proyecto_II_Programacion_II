@@ -6,22 +6,26 @@ Persona::Persona() : Cliente()
 	this->nacionalidad = "";
 }
 
-Persona::Persona(string cedula,string nombrePais, string ciudadUbicacion, string email, string nacionalidad) : Cliente(cedula,nombrePais, ciudadUbicacion)
+Persona::Persona(string cedula, string nombreC, string nombrePais, string ciudadUbicacion, string email, string nacionalidad) : Cliente(cedula,nombrePais, ciudadUbicacion)
 {
+	this->nombreC = nombreC;
 	this->email = email;
 	this->nacionalidad = nacionalidad;
 }
 
 Persona::~Persona()
 {
+
 }
 
 // Getters
+string Persona::getNombreC() { return this->nombreC; }
 string Persona::getEmail() { return this->email; }
 string Persona::getNacionalidad() { return this->nacionalidad; }
 
 
 // Setters
+void Persona::setNombreC(string nombreC) { this->nombreC = nombreC; }
 void Persona::setEmail(string email) { this->email = email; }
 void Persona::setNacionalidad(string nacionalidad) { this->nacionalidad = nacionalidad; }
 
@@ -29,11 +33,13 @@ void Persona::setNacionalidad(string nacionalidad) { this->nacionalidad = nacion
 string Persona::toString()
 {
 	stringstream s;
+	s << "---------------CLIENTE--------------" << endl << endl;
 	s << "Cedula: " << this->cedula << endl;
+	s << "Nombre: " << this->nombreC << endl;
 	s << "Email: " << this->email << endl;
 	s << "Nacionalidad: " << this->nacionalidad << endl;
 	s << "Nombre del Pais: " << this->nombrePais << endl;
-	s << "Ciudad de Ubicacion: " << this->ciudadUbicacion << endl;
-
+	s << "Ciudad de Ubicacion: " << this->ciudadUbicacion << endl << endl;
+	s << "-----------------------------------" << endl << endl;
 	return s.str();
 }

@@ -134,3 +134,31 @@ Componente* Tienda::getComponente(string modelo)
 {
 	return this->catalogo->getComponente(modelo);
 }
+
+string Tienda::componenteToString(string modelo)
+{
+	return this->catalogo->getComponente(modelo)->toString();
+}
+
+string Tienda::sistemaToString(string codigo)
+{
+	return this->catalogo->getSistema(codigo)->toString();
+}
+
+bool Tienda::existeComponente(string modelo)
+{
+	return this->catalogo->existeComponente(modelo);
+}
+
+bool Tienda::existeSistema(string codigo)
+{
+	return this->catalogo->existeSistema(codigo);
+}
+
+double Tienda::comprarSistemaPreconfig(string codigo) {
+	return this->catalogo->getSistema(codigo)->getPrecio();
+}
+
+double Tienda::totalComponente(string modelo) {
+	return (this->catalogo->getComponente(modelo)->getPrecioBase()) * 1.35;
+}

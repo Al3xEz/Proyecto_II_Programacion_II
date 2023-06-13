@@ -38,4 +38,7 @@ public:
 	bool recuperarSistemas();
 	bool resetComponentes();
 	bool resetSistemas();
+	bool existeComponente(string);
+	bool existeSistema(string);
+	Sistema* getSistema(string);
 };

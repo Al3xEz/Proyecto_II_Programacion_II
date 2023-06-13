@@ -44,4 +44,12 @@ public:
 	bool resetSistemas();
 
 	Componente* getComponente(string);
+	string componenteToString(string);
+	string sistemaToString(string);
+	bool existeComponente(string);
+	bool existeSistema(string);
+	
+	double comprarSistemaPreconfig(string);
+	double comprarSistemaPreconfigVirtual(string);
+	double totalComponente(string);
 };

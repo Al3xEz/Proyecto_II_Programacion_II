@@ -8,7 +8,7 @@ Cliente::Cliente()
 
 }
 
-Cliente::Cliente(string cedula,string nombrePais, string ciudadUbicacion)
+Cliente::Cliente(string cedula, string nombrePais, string ciudadUbicacion)
 {
 	this->cedula = cedula;
 	this->nombrePais = nombrePais;

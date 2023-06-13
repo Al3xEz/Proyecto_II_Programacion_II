@@ -48,7 +48,7 @@ bool Catalogo::agregarSistema(Sistema* sistema)
 		this->sistemas->push_back(sistema);
 		for (Sistema* sist : *sistemas) {
 			// Escribir los modelos de cada componente del sistema en el archivo
-			archivo << sist->getId() << "\t" << sist->getModeloFuente() << "\t" << sist->getModeloProcesador() << "\t" << sist->getModeloParlante() << "\t" << endl;
+			archivo << sist->getCod() << "\t" << sist->getModeloFuente() << "\t" << sist->getModeloProcesador() << "\t" << sist->getModeloParlante() << "\t" << endl;
 		}
 
 		archivo.close();
@@ -78,7 +78,7 @@ bool Catalogo::eliminarSistema(string id)
 {
 	for (auto i = sistemas->begin(); i != sistemas->end(); ++i)
 	{
-		if ((*i)->getId() == id)
+		if ((*i)->getCod() == id)
 		{
 			ofstream archivo("sistemas.txt");
 
@@ -86,7 +86,7 @@ bool Catalogo::eliminarSistema(string id)
 				sistemas->erase(i);
 				for (Sistema* sist : *sistemas) {
 					// Escribir los modelos de cada componente del sistema en el archivo
-					archivo << sist->getId() << "\t" << sist->getModeloFuente() << "\t" << sist->getModeloProcesador() << "\t" << sist->getModeloParlante() << "\t" << endl;
+					archivo << sist->getCod() << "\t" << sist->getModeloFuente() << "\t" << sist->getModeloProcesador() << "\t" << sist->getModeloParlante() << "\t" << endl;
 				}
 
 				archivo.close();
@@ -374,4 +374,40 @@ bool Catalogo::resetSistemas()
 
 	return false;
 
+}
+
+bool Catalogo::existeComponente(string modelo)
+{
+	for (Componente* componente : *componentes)
+	{
+		if (componente->getModelo() == modelo) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+bool Catalogo::existeSistema(string codigo)
+{
+	for (Sistema* sistema : *sistemas)
+	{
+		if (sistema->getCod() == codigo) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+Sistema* Catalogo::getSistema(string codigo) 
+{
+	for (Sistema* sistema : *sistemas)
+	{
+		if (sistema->getCod() == codigo) {
+			return sistema;
+		}
+	}
+
+	return nullptr;
 }
