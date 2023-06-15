@@ -14,12 +14,12 @@ Fuente::~Fuente() {
 
 string Fuente::toString() {
 	stringstream s;
-	s << "--------------------FUENTE--------------------" << endl << endl;
+	s << "----------------------FUENTE----------------------" << endl << endl;
 	s << "-Categoria: " << categoria << endl;
 	s << "-Componente: " << componente << endl;
 	s << "-Modelo: " << modelo << endl;
 	s << "-Caracteristica: " << caracteristica << endl;
 	s << "-Precio Base: " << precioBase << endl << endl;
-	s << "----------------------------------------------" << endl << endl;
+	s << "--------------------------------------------------" << endl << endl;
 	return s.str();
 }

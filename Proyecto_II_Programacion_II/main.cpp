@@ -76,7 +76,9 @@ int main() {
 						cin >> opc;
 						cout << endl;
 						if (opc == 1) {
-							cout << "¡La compra se realizo con exito!" << endl;
+							cout << "La compra se realizo con exito!" << endl << endl;
+							system("pause");
+							break;
 						}
 						cout << endl;
 						system("cls");
@@ -166,7 +168,9 @@ int main() {
 						cin >> opc;
 						cout << endl;
 						if (opc == 1) {
-							cout << "¡La compra se realizo con exito!" << endl;
+							cout << "La compra se realizo con exito!" << endl << endl;
+							system("pause");
+							break;
 						}
 						cout << endl;
 						system("cls");
@@ -221,7 +225,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -262,7 +268,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -303,7 +311,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -491,7 +501,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -536,7 +548,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -583,7 +597,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -630,7 +646,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -675,7 +693,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -720,7 +740,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -765,7 +787,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -810,7 +834,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -855,7 +881,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -900,7 +928,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -955,7 +985,7 @@ int main() {
 										cout << endl;
 									}
 								}
-								if (ced.size() != 10) {
+								if (cedJ.size() != 10) {
 									throw error = "*El numero de digitos de la cedula juridica debe ser igual a 10.";
 									cout << endl;
 								}
@@ -1021,7 +1051,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1066,7 +1098,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1113,7 +1147,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1160,7 +1196,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1205,7 +1243,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1250,7 +1290,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1295,7 +1337,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1340,7 +1384,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1385,7 +1431,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");
@@ -1430,7 +1478,9 @@ int main() {
 									cin >> opc;
 									cout << endl;
 									if (opc == 1) {
-										cout << "¡La compra se realizo con exito!" << endl;
+										cout << "La compra se realizo con exito!" << endl << endl;
+										system("pause");
+										break;
 									}
 									cout << endl;
 									system("cls");

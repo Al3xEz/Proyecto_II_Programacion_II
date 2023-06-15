@@ -1,11 +1,8 @@
 #include "Catalogo.h"
-
 #include "Cliente.h"
 #include "Empresa.h"
 #include "Persona.h"
-
 #include <cstdlib>
-
 #pragma once
 class Tienda
 {
@@ -50,6 +47,5 @@ public:
 	bool existeSistema(string);
 	
 	double comprarSistemaPreconfig(string);
-	double comprarSistemaPreconfigVirtual(string);
 	double totalComponente(string);
 };

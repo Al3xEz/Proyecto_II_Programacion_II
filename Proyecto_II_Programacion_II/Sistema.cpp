@@ -62,12 +62,12 @@ string Sistema::toString()
 {
 
 	stringstream s;
-	s << "--------------------SISTEMA--------------------" << endl << endl;
+	s << "---------------------SISTEMA----------------------" << endl << endl;
 	s << "-Codigo: " << this->cod << endl << endl;
 	s << this->fuente->toString();
 	s << this->procesador->toString();
 	s << this->parlante->toString();
-	s << "-----------------------------------------------" << endl << endl;
+	s << "--------------------------------------------------" << endl << endl;
 	return s.str();
 
 }
@@ -76,11 +76,11 @@ string Sistema::toString2()
 {
 
 	stringstream s;
-	s << "--------------------SISTEMA--------------------" << endl << endl;
+	s << "--------------------SISTEMA-----------------------" << endl << endl;
 	s << this->fuente->toString();
 	s << this->procesador->toString();
 	s << this->parlante->toString();
-	s << "-----------------------------------------------" << endl << endl;
+	s << "--------------------------------------------------" << endl << endl;
 	return s.str();
 
 }

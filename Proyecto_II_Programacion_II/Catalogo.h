@@ -1,6 +1,5 @@
 #include "Sistema.h"
 #include <fstream>
-
 #include <vector>
 
 #pragma once
