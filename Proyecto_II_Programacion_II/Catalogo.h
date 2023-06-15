@@ -27,11 +27,16 @@ public:
 	bool agregarComponente(Componente*);
 	bool eliminarSistema(string);
 	bool eliminarComponente(string);
+	bool editarComponente(string, Componente*);
+	bool editarSistema(string, Sistema*);
+
 	string mostrarSistemas();
 	string mostrarComponentes();
 	string mostrarFuentes();
 	string mostrarProcesadores();
 	string mostrarParlantes();
+	string sistemasMasVendidos();
+
 	Componente* getComponente(string);
 	bool recuperarComponentes();
 	bool recuperarSistemas();

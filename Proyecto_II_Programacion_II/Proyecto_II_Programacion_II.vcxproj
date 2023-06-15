@@ -150,6 +150,7 @@
     <ClCompile Include="Procesador.cpp" />
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Tienda.cpp" />
+    <ClCompile Include="Venta.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Catalogo.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Procesador.h" />
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Tienda.h" />
+    <ClInclude Include="Venta.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

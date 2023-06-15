@@ -23,7 +23,8 @@ public:
 	string getModeloFuente();
 	string getModeloProcesador();
 	string getModeloParlante();
-	double getPrecio();
+	double getPrecioBase();
+	double getPrecioTotal();
 
 	string toString();
 	string toString2();

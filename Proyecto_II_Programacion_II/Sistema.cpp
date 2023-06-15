@@ -1,3 +1,14 @@
+/* --------------------------------------------------------------------
+*
+* EIF204 Programación 2
+* Proyecto 2
+*
+* 1-1874-0667 Julian Ramirez Salas. grupo 04
+* 3-0531-0834 Jorge Solano Cordero. grupo 04
+*
+* -------------------------------------------------------------------
+*/
+
 #include "Sistema.h"
 
 Sistema::Sistema()
@@ -15,7 +26,7 @@ Sistema::Sistema(string cod, Componente* fuente, Componente* procesador, Compone
 	this->fuente = fuente;
 	this->procesador = procesador;
 	this->parlante = parlante;
-	this->precio = (fuente->getPrecioBase() + procesador->getPrecioBase() + parlante->getPrecioBase()) * 1.35;
+	this->precio = (fuente->getPrecioBase() + procesador->getPrecioBase() + parlante->getPrecioBase());
 }
 
 Sistema::Sistema(Componente* fuente, Componente* procesador, Componente* parlante)
@@ -23,7 +34,7 @@ Sistema::Sistema(Componente* fuente, Componente* procesador, Componente* parlant
 	this->fuente = fuente;
 	this->procesador = procesador;
 	this->parlante = parlante;
-	this->precio = (fuente->getPrecioBase() + procesador->getPrecioBase() + parlante->getPrecioBase()) * 1.35;
+	this->precio = (fuente->getPrecioBase() + procesador->getPrecioBase() + parlante->getPrecioBase());
 }
 
 Sistema::~Sistema()
@@ -53,9 +64,14 @@ string Sistema::getModeloParlante()
 	return this->parlante->getModelo();
 }
 
-double Sistema::getPrecio()
+double Sistema::getPrecioBase()
 {
 	return this->precio;
+}
+
+double Sistema::getPrecioTotal()
+{
+	return this->precio * 1.35;
 }
 
 string Sistema::toString()

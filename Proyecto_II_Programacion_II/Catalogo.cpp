@@ -1,3 +1,14 @@
+/* --------------------------------------------------------------------
+*
+* EIF204 Programación 2
+* Proyecto 2
+*
+* 1-1874-0667 Julian Ramirez Salas. grupo 04
+* 3-0531-0834 Jorge Solano Cordero. grupo 04
+*
+* -------------------------------------------------------------------
+*/
+
 #include "Catalogo.h"
 
 Catalogo::Catalogo()
@@ -123,6 +134,24 @@ bool Catalogo::eliminarComponente(string modelo)
 	return false;
 }
 
+bool Catalogo::editarComponente(string modelo, Componente* componente)
+{
+	if (eliminarComponente(modelo) && agregarComponente(componente)) {
+		return true;
+	}
+
+	return false;
+}
+
+bool Catalogo::editarSistema(string codigo, Sistema* sistema)
+{
+	if (eliminarSistema(codigo) && agregarSistema(sistema)) {
+		return true;
+	}
+
+	return false;
+}
+
 string Catalogo::mostrarSistemas()
 {
 	stringstream s;
@@ -225,6 +254,16 @@ string Catalogo::mostrarParlantes()
 			s << componente->toString() << endl;
 		}
 	}
+
+	return s.str();
+}
+
+string Catalogo::sistemasMasVendidos()
+{
+	stringstream s;
+
+	sistemas->at(0) != nullptr && s << sistemas->at(0)->toString2();
+	sistemas->at(1) != nullptr && s << sistemas->at(1)->toString2();
 
 	return s.str();
 }
@@ -400,7 +439,7 @@ bool Catalogo::existeSistema(string codigo)
 	return false;
 }
 
-Sistema* Catalogo::getSistema(string codigo) 
+Sistema* Catalogo::getSistema(string codigo)
 {
 	for (Sistema* sistema : *sistemas)
 	{

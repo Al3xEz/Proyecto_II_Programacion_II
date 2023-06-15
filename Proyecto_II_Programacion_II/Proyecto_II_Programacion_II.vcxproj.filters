@@ -48,6 +48,9 @@
     <ClCompile Include="Tienda.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Venta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Componente.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Tienda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Venta.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

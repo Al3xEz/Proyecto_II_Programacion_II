@@ -1,15 +1,28 @@
+/* --------------------------------------------------------------------
+*
+* EIF204 Programación 2
+* Proyecto 2
+*
+* 1-1874-0667 Julian Ramirez Salas. grupo 04
+* 3-0531-0834 Jorge Solano Cordero. grupo 04
+*
+* -------------------------------------------------------------------
+*/
+
 #include "Tienda.h"
 
 Tienda::Tienda()
 {
 	this->catalogo = new Catalogo();
 	this->clientes = new vector<Cliente*>;
+	this->ventas = new vector<Venta*>;
 }
 
-Tienda::Tienda(vector<Cliente*>* clientes, Catalogo* catalogo)
+Tienda::Tienda(vector<Cliente*>* clientes, Catalogo* catalogo, vector<Venta*>* ventas)
 {
 	this->clientes = clientes;
 	this->catalogo = catalogo;
+	this->ventas = ventas;
 }
 
 Tienda::~Tienda()
@@ -25,7 +38,7 @@ vector<Cliente*>* Tienda::getClientes()
 
 Catalogo* Tienda::getCatalogo()
 {
-	return catalogo;
+	return this->catalogo;
 }
 
 void Tienda::setClientes(vector<Cliente*>* clientes)
@@ -85,6 +98,11 @@ void Tienda::agregarComponente(Componente* componente)
 	this->catalogo->agregarComponente(componente);
 }
 
+void Tienda::agregarVenta(Venta* venta)
+{
+	this->ventas->push_back(venta);
+}
+
 void Tienda::eliminarSistema(string id)
 {
 	this->catalogo->eliminarSistema(id);
@@ -93,6 +111,16 @@ void Tienda::eliminarSistema(string id)
 void Tienda::eliminarComponente(string modelo)
 {
 	this->catalogo->eliminarComponente(modelo);
+}
+
+bool Tienda::editarComponente(string modelo, Componente* componente)
+{
+	return this->catalogo->editarComponente(modelo, componente);
+}
+
+bool Tienda::editarSistema(string codigo, Sistema* sistema)
+{
+	return this->catalogo->editarSistema(codigo, sistema);
 }
 
 string Tienda::mostrarSistemas()
@@ -118,6 +146,44 @@ string Tienda::mostrarProcesadores()
 string Tienda::mostrarParlantes()
 {
 	return this->catalogo->mostrarParlantes();
+}
+
+string Tienda::mostrarVentas()
+{
+	stringstream s;
+
+	double bruto = 0;
+	double neto = 0;
+
+	// Verificando que el vector de clientes no esté vacio
+	if (this->clientes->empty())
+	{
+		s << "No hay ventas registrados." << endl;
+		return s.str();
+	}
+
+	for (Venta* venta : *ventas)
+	{
+		if (venta->getModalidad() == "Presencial" && venta->getSistema() != nullptr) {
+			s << venta->FacturaSistemaPresencial() << endl;
+		}
+
+		else if (venta->getModalidad() == "Virtual") {
+			s << venta->FacturaSistemaVirtual() << endl;
+		}
+
+		else {
+			s << venta->FacturaComponentePresencial() << endl;
+		}
+		neto += venta->getNeto();
+		bruto += venta->getBruto();
+	}
+
+	s << "Total Bruto: " << bruto << endl;
+	s << "Total Neto: " << neto << endl;
+	s << "Ganancias: " << neto * 0.35;
+
+	return s.str();
 }
 
 bool Tienda::resetComponentes()
@@ -155,8 +221,13 @@ bool Tienda::existeSistema(string codigo)
 	return this->catalogo->existeSistema(codigo);
 }
 
+string Tienda::sistemasMasVendidos()
+{
+	return catalogo->sistemasMasVendidos();
+}
+
 double Tienda::comprarSistemaPreconfig(string codigo) {
-	return this->catalogo->getSistema(codigo)->getPrecio();
+	return this->catalogo->getSistema(codigo)->getPrecioTotal();
 }
 
 double Tienda::totalComponente(string modelo) {
