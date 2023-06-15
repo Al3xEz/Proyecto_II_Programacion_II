@@ -5,7 +5,7 @@
 class Venta
 {
 private:
-	string id;
+	int id;
 	Sistema* sistema;
 	Componente* componente;
 	string modalidad;
@@ -14,15 +14,17 @@ private:
 	double bruto;
 
 public:
-	Venta(string, Sistema*, string, double);
-	Venta(string, Sistema*, string);
-	Venta(string, Componente*);
+	Venta(int, Sistema*, double);
+	Venta(int, Sistema*);
+	Venta(int, Componente*);
 	~Venta();
 
-	string getModalidad();
 	double getNeto();
 	double getBruto();
+	double getEnvio();
+	string getModalidad();
 	Sistema* getSistema();
+	Componente* getComponente();
 
 	string FacturaSistemaPresencial();
 	string FacturaComponentePresencial();

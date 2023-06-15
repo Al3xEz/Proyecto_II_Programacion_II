@@ -20,6 +20,7 @@ public:
 	~Tienda();
 
 	vector<Cliente*>* getClientes();
+	vector<Venta*>* getVentas();
 	Catalogo* getCatalogo();
 
 	void setClientes(vector<Cliente*>*);
@@ -49,6 +50,7 @@ public:
 
 	Componente* getComponente(string);
 	string componenteToString(string);
+	Sistema* getSistema(string);
 	string sistemaToString(string);
 	bool existeComponente(string);
 	bool existeSistema(string);

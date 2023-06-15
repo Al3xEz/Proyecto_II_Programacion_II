@@ -25,6 +25,7 @@ int main() {
 	Sistema* sistema = nullptr;
 	Cliente* persona = nullptr;
 	Cliente* empresa = nullptr;
+	Venta* factura = nullptr;
 	bool valido = false;
 
 	do {
@@ -78,11 +79,10 @@ int main() {
 						system("pause");
 						system("cls");
 						cout << endl;
-						//Obtener sistema y metodo de compra
-						cout << "-Sistema a comprar: " << endl << endl;
-						cout << tienda->sistemaToString(cod);
-						cout << "-Precio total: " << tienda->comprarSistemaPreconfig(cod) << " dolares" << endl;
-						cout << endl;
+						//Metodo de compra e impresion de factura
+						factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod));
+						tienda->agregarVenta(factura);
+						cout << factura->FacturaSistemaPresencial();
 						cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 						cin >> opc;
 						cout << endl;
@@ -170,11 +170,11 @@ int main() {
 						cout << endl;
 						//Mostrar el sistema creado
 						sistema = new Sistema(fuente, procesador, parlante);
-						cout << "-Sistema creado: " << endl << endl;
-						cout << sistema->toString2();
-						//Metodo de compra
-						cout << "-Precio total: " << sistema->getPrecioTotal() << " dolares" << endl;
-						cout << endl;
+						//Metodo de compra e impresion de factura
+						//Metodo de compra e impresion de factura
+						factura = new Venta(tienda->getVentas()->size(), sistema);
+						tienda->agregarVenta(factura);
+						cout << factura->FacturaSistemaPresencial();
 						cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 						cin >> opc;
 						cout << endl;
@@ -228,10 +228,10 @@ int main() {
 								system("pause");
 								system("cls");
 								cout << endl;
-								cout << tienda->componenteToString(fue);
-								//Metodo de compra
-								cout << "-Precio total: " << tienda->totalComponente(fue) << " dolares" << endl;
-								cout << endl;
+								//Metodo de compra e impresion de factura
+								factura = new Venta(tienda->getVentas()->size(), tienda->getComponente(fue));
+								tienda->agregarVenta(factura);
+								cout << factura->FacturaComponentePresencial();
 								cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 								cin >> opc;
 								cout << endl;
@@ -271,10 +271,10 @@ int main() {
 								system("pause");
 								system("cls");
 								cout << endl;
-								cout << tienda->componenteToString(pro);
-								//Metodo de compra
-								cout << "-Precio total: " << tienda->totalComponente(pro) << " dolares" << endl;
-								cout << endl;
+								//Metodo de compra e impresion de factura
+								factura = new Venta(tienda->getVentas()->size(), tienda->getComponente(pro));
+								tienda->agregarVenta(factura);
+								cout << factura->FacturaComponentePresencial();
 								cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 								cin >> opc;
 								cout << endl;
@@ -314,10 +314,10 @@ int main() {
 								system("pause");
 								system("cls");
 								cout << endl;
-								cout << tienda->componenteToString(par);
-								//Metodo de compra
-								cout << "-Precio total: " << tienda->totalComponente(par) << " dolares" << endl;
-								cout << endl;
+								//Metodo de compra e impresion de factura
+								factura = new Venta(tienda->getVentas()->size(), tienda->getComponente(par));
+								tienda->agregarVenta(factura);
+								cout << factura->FacturaComponentePresencial();
 								cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 								cin >> opc;
 								cout << endl;
@@ -503,11 +503,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 175 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 175);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -550,11 +549,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 150 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 150);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -599,11 +597,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 160 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 160);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -648,11 +645,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 150 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 150);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -695,11 +691,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 100 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 100);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -742,11 +737,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 200 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 200);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -789,11 +783,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 200 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 200);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -836,11 +829,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 250 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 250);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -883,11 +875,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 50 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 50);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -930,11 +921,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 80 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 80);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1053,11 +1043,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 175 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 175);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1100,11 +1089,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 150 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 150);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1149,11 +1137,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 160 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 160);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1198,11 +1185,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 150 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 150);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1245,11 +1231,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 100 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 100);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1292,11 +1277,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 200 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 200);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1339,11 +1323,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 200 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 200);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1386,11 +1369,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 250 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 250);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1433,11 +1415,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 50 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 50);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1480,11 +1461,10 @@ int main() {
 							system("pause");
 							system("cls");
 							cout << endl;
-							//Obtener sistema y metodo de compra
-							cout << "-Sistema a comprar: " << endl << endl;
-							cout << tienda->sistemaToString(cod);
-							cout << "-Precio total: " << (tienda->comprarSistemaPreconfig(cod)) + 80 << " dolares" << endl;
-							cout << endl;
+							//Metodo de compra e impresion de factura
+							factura = new Venta(tienda->getVentas()->size(), tienda->getSistema(cod), 80);
+							tienda->agregarVenta(factura);
+							cout << factura->FacturaSistemaVirtual();
 							cout << "Desea proceder con la compra? ( 1 = SI | 2 = NO ): ";
 							cin >> opc;
 							cout << endl;
@@ -1545,11 +1525,12 @@ int main() {
 						cout << endl;
 						cout << "----------------SISTEMAS PRECONFIGURADOS----------------" << endl << endl;
 						cout << "[1] Ingresar" << endl << endl;
-						cout << "[2] Editar" << endl << endl; //Falta :(
+						cout << "[2] Editar" << endl << endl; 
 						cout << "[3] Eliminar" << endl << endl;
 						cout << "[4] Mostrar Sistemas" << endl << endl;
-						cout << "[5] Reset de Sistemas (Lista de sistemas por defecto)" << endl << endl;
-						cout << "[6] Salir" << endl << endl;
+						cout << "[5] Mostrar Sistemas Mas Vendidos" << endl << endl;
+						cout << "[6] Reset de Sistemas (Lista de sistemas por defecto)" << endl << endl;
+						cout << "[7] Salir" << endl << endl;
 						cout << "--------------------------------------------------------" << endl << endl;
 						cout << "Ingrese la opcion que desea realizar: ";
 						cin >> op6;
@@ -1777,17 +1758,27 @@ int main() {
 						}
 						case 5: {
 							system("cls");
+							//Mostrar Sistemas Mas Vendidos
+							cout << tienda->sistemasMasVendidos() << endl;
+							system("pause");
+							system("cls");
+							break;
+						}
+						case 6: {
+							system("cls");
 							if (tienda->resetSistemas()) {
+								cout << endl;
 								cout << "Se ha restablecido la lista de sistemas" << endl;
 							}
 							else {
+								cout << endl;
 								cout << "No se pudo restablecer la lista de sistemas" << endl;
 							}
 							system("pause");
 							system("cls");
 							break;
 						}
-						case 6: {
+						case 7: {
 							op6 = 0;
 							break;
 						}
@@ -1808,7 +1799,7 @@ int main() {
 						cout << endl;
 						cout << "-----------------------COMPONENTES----------------------" << endl << endl;
 						cout << "[1] Ingresar" << endl << endl;
-						cout << "[2] Editar" << endl << endl; //Falta :(
+						cout << "[2] Editar" << endl << endl; 
 						cout << "[3] Eliminar" << endl << endl;
 						cout << "[4] Mostrar Componentes" << endl << endl;
 						cout << "[5] Reset de Componentes (Lista de componentes por defecto)" << endl << endl;
@@ -1996,7 +1987,7 @@ int main() {
 				}
 				case 4: {
 					system("cls");
-					
+					cout << tienda->mostrarVentas();
 					system("pause");
 					system("cls");
 					break;

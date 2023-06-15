@@ -36,6 +36,11 @@ vector<Cliente*>* Tienda::getClientes()
 	return this->clientes;
 }
 
+vector<Venta*>* Tienda::getVentas()
+{
+	return this->ventas;
+}
+
 Catalogo* Tienda::getCatalogo()
 {
 	return this->catalogo;
@@ -158,6 +163,7 @@ string Tienda::mostrarVentas()
 	// Verificando que el vector de clientes no esté vacio
 	if (this->clientes->empty())
 	{
+		s << endl;
 		s << "No hay ventas registrados." << endl;
 		return s.str();
 	}
@@ -179,9 +185,9 @@ string Tienda::mostrarVentas()
 		bruto += venta->getBruto();
 	}
 
-	s << "Total Bruto: " << bruto << endl;
-	s << "Total Neto: " << neto << endl;
-	s << "Ganancias: " << neto * 0.35;
+	s << "-Total Bruto: " << bruto << endl << endl;
+	s << "-Total Neto: " << neto << endl << endl;
+	s << "-Ganancias: " << neto * 0.35 << endl << endl;
 
 	return s.str();
 }
@@ -204,6 +210,11 @@ Componente* Tienda::getComponente(string modelo)
 string Tienda::componenteToString(string modelo)
 {
 	return this->catalogo->getComponente(modelo)->toString();
+}
+
+Sistema* Tienda::getSistema(string codigo)
+{
+	return this->catalogo->getSistema(codigo);
 }
 
 string Tienda::sistemaToString(string codigo)

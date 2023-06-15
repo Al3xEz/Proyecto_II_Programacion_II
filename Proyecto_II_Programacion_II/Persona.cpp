@@ -51,6 +51,6 @@ string Persona::toString()
 	s << "Nacionalidad: " << this->nacionalidad << endl;
 	s << "Nombre del Pais: " << this->nombrePais << endl;
 	s << "Ciudad de Ubicacion: " << this->ciudadUbicacion << endl << endl;
-	s << "-----------------------------------" << endl << endl;
+	s << "------------------------------------" << endl << endl;
 	return s.str();
 }

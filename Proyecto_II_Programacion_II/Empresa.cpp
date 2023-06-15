@@ -37,10 +37,11 @@ void Empresa::setNombreEmpresa(string nombreEmpresa) { this->nombreEmpresa = nom
 string Empresa::toString()
 {
 	stringstream s;
+	s << "--------------------CLIENTE-------------------" << endl << endl;
 	s << "Cedula Juridica: " << this->cedula << endl;
 	s << "Nombre de la empresa: " << this->nombreEmpresa << endl;
 	s << "Nombre del Pais: " << this->nombrePais << endl;
-	s << "Ciudad de Ubicacion: " << this->ciudadUbicacion << endl;
-
+	s << "Ciudad de Ubicacion: " << this->ciudadUbicacion << endl << endl;
+	s << "----------------------------------------------" << endl << endl;
 	return s.str();
 }
