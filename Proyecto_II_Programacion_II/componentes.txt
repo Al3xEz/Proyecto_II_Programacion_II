@@ -15,8 +15,8 @@ Fuente de audio	Unidad Bluetooth	WG255	Receptor FM	90.00
 Fuente de audio	Microfono	UT654	Alambrico	90.00
 Fuente de audio	Microfono	SD353	Alambrico omnidireccional	95.00
 Fuente de audio	Microfono	HR568	Inalambrico	120.00
-Fuente de audio	Microfono	KC176	Inalambrico	Rango ampliado	180.00
-Fuente de audio	Microfono	QU632	Inalambrico	Bluetooth	100.00
+Fuente de audio	Microfono	KC176	Inalambrico rango ampliado	180.00
+Fuente de audio	Microfono	QU632	Inalambrico Bluetooth	100.00
 Procesador de audio	Amplificador	IR302	80W	90.00
 Procesador de audio	Amplificador	CV136	100W	115.00
 Procesador de audio	Amplificador	WU205	200W	140.00

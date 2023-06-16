@@ -14,11 +14,13 @@ private:
 	double precio;
 
 public:
+	//----------Contructores y destructor----------//
 	Sistema();
 	Sistema(string, Componente*, Componente*, Componente*);
 	Sistema(Componente*, Componente*, Componente*);
 	~Sistema();
 
+	//Getters
 	string getCod();
 	string getModeloFuente();
 	string getModeloProcesador();
@@ -26,6 +28,7 @@ public:
 	double getPrecioBase();
 	double getPrecioTotal();
 
+	//toStrings
 	string toString();
 	string toString2();
 };

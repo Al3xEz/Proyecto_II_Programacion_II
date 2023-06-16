@@ -11,6 +11,7 @@
 
 #include "Fuente.h"
 
+//----------Contructores y destructor----------//
 Fuente::Fuente() : Componente()
 {
 }
@@ -23,6 +24,7 @@ Fuente::~Fuente() {
 
 }
 
+//toString
 string Fuente::toString() {
 	stringstream s;
 	s << "----------------------FUENTE----------------------" << endl << endl;

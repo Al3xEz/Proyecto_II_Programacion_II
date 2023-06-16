@@ -11,6 +11,8 @@
 
 #include "Persona.h"
 
+//----------Contructores y destructor----------//
+
 Persona::Persona() : Cliente()
 {
 	this->email = "";

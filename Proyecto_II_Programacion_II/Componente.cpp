@@ -11,6 +11,8 @@
 
 #include "Componente.h"
 
+//----------Contructores y destructor----------//
+
 Componente::Componente()
 {
 	categoria = "";
@@ -32,6 +34,8 @@ Componente::~Componente(){
 
 }
 
+//Setters
+
 void Componente::setCategoria(string cat){
 	categoria = cat;
 }
@@ -51,6 +55,8 @@ void Componente::setCaracteristica(string car){
 void Componente::setPrecioBase(double pre){
 	precioBase = pre;
 }
+
+//Getters
 
 string Componente::getCategoria(){
 	return categoria;

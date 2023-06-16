@@ -11,6 +11,8 @@
 
 #include "Empresa.h"
 
+//----------Contructores y destructor----------//
+
 Empresa::Empresa() : Cliente()
 {
 	this->nombreEmpresa = "";

@@ -1,5 +1,7 @@
 #include "Venta.h"
 
+//----------Contructores y destructor----------//
+
 Venta::Venta(int id, Sistema* sistema, double envio)
 {
 	this->id = id;
@@ -39,6 +41,8 @@ Venta::~Venta()
 	delete componente;
 }
 
+//Getters
+
 double Venta::getNeto()
 {
 	return this->neto;
@@ -68,6 +72,8 @@ Componente* Venta::getComponente()
 {
 	return this->componente;
 }
+
+//Metodos para mostrar facturas
 
 string Venta::FacturaSistemaPresencial()
 {

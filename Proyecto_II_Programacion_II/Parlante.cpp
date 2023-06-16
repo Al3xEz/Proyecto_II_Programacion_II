@@ -11,6 +11,8 @@
 
 #include "Parlante.h"
 
+//----------Contructores y destructor----------//
+
 Parlante::Parlante() : Componente()
 {
 }
@@ -23,6 +25,7 @@ Parlante::~Parlante() {
 
 }
 
+//toString
 string Parlante::toString() {
 	stringstream s;
 	s << "---------------------PARLANTE---------------------" << endl << endl;

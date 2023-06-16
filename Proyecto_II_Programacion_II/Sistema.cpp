@@ -11,6 +11,8 @@
 
 #include "Sistema.h"
 
+//----------Contructores y destructor----------//
+
 Sistema::Sistema()
 {
 	this->cod = "";
@@ -44,6 +46,8 @@ Sistema::~Sistema()
 	delete parlante;
 }
 
+
+//Getters
 string Sistema::getCod()
 {
 	return this->cod;
@@ -74,6 +78,7 @@ double Sistema::getPrecioTotal()
 	return this->precio * 1.35;
 }
 
+//toStrings
 string Sistema::toString()
 {
 

@@ -14,49 +14,61 @@ private:
 	Catalogo* catalogo;
 
 public:
-
+	//----------Contructores y destructor----------//
 	Tienda();
 	Tienda(vector<Cliente*>*, Catalogo*, vector<Venta*>*);
 	~Tienda();
 
+	//Getters
 	vector<Cliente*>* getClientes();
 	vector<Venta*>* getVentas();
 	Catalogo* getCatalogo();
+	Componente* getComponente(string);
+	Sistema* getSistema(string);
 
+	//Setters
 	void setClientes(vector<Cliente*>*);
 	void setCatalogo(Catalogo*);
+	void setVentas(vector<Venta*>*);
 
+	//----------Metodos administracion----------//
+
+	//Agregar
 	void agregarCliente(Cliente*);
-	void eliminarCliente(string);
-	string mostrarClientes();
-
 	void agregarSistema(Sistema*);
 	void agregarComponente(Componente*);
 	void agregarVenta(Venta*);
+
+	//Eliminar
+	void eliminarCliente(string);
 	void eliminarSistema(string);
 	void eliminarComponente(string);
+
+	//Editar
 	bool editarComponente(string, Componente*);
 	bool editarSistema(string, Sistema*);
 
+	//----------Metodos para mostrar----------//
+	string mostrarClientes();
 	string mostrarSistemas();
 	string mostrarComponentes();
 	string mostrarFuentes();
 	string mostrarProcesadores();
 	string mostrarParlantes();
 	string mostrarVentas();
+	string componenteToString(string);
+	string sistemaToString(string);
+	string sistemasMasVendidos();
 
+	//Reset de datos
 	bool resetComponentes();
 	bool resetSistemas();
 
-	Componente* getComponente(string);
-	string componenteToString(string);
-	Sistema* getSistema(string);
-	string sistemaToString(string);
+	//Verifican si un componente o sistema existe, dado un id.
 	bool existeComponente(string);
 	bool existeSistema(string);
 
-	string sistemasMasVendidos();
-
+	//Devuelven el precio de un sistema o componente, dado un id.
 	double comprarSistemaPreconfig(string);
 	double totalComponente(string);
 };

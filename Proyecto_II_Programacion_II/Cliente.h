@@ -12,6 +12,7 @@ protected:
 	string ciudadUbicacion;
 
 public:
+	//----------Contructores y destructor----------//
 	Cliente();
 	Cliente(string,string, string);
 	~Cliente();

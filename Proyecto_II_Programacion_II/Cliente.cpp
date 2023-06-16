@@ -11,6 +11,8 @@
 
 #include "Cliente.h"
 
+//----------Contructores y destructor----------//
+
 Cliente::Cliente()
 {
 	this->cedula = "";

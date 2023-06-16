@@ -14,11 +14,13 @@ private:
 	double bruto;
 
 public:
+	//----------Contructores y destructor----------//
 	Venta(int, Sistema*, double);
 	Venta(int, Sistema*);
 	Venta(int, Componente*);
 	~Venta();
 
+	//Getters
 	double getNeto();
 	double getBruto();
 	double getEnvio();
@@ -26,6 +28,7 @@ public:
 	Sistema* getSistema();
 	Componente* getComponente();
 
+	//Metodos para mostrar facturas
 	string FacturaSistemaPresencial();
 	string FacturaComponentePresencial();
 	string FacturaSistemaVirtual();

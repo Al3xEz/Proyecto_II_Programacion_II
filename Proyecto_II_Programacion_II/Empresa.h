@@ -7,6 +7,7 @@ private:
 	string nombreEmpresa;
 
 public:
+	//----------Contructores y destructor----------//
 	Empresa();
 	Empresa(string, string, string, string);
 	~Empresa();

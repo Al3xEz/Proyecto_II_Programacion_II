@@ -9,6 +9,7 @@ private:
 	string email;
 	string nacionalidad;
 public:
+	//----------Contructores y destructor----------//
 	Persona();
 	Persona(string, string, string, string, string, string);
 	~Persona();

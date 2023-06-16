@@ -11,6 +11,8 @@
 
 #include "Procesador.h"
 
+//----------Contructores y destructor----------//
+
 Procesador::Procesador() : Componente()
 {
 }
@@ -22,6 +24,8 @@ Procesador::Procesador(string cat, string com, string mod, string car, double pr
 Procesador::~Procesador() {
 
 }
+
+//toString
 
 string Procesador::toString() {
 	stringstream s;
