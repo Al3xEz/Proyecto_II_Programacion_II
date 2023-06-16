@@ -51,6 +51,12 @@
     <ClCompile Include="Venta.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Interfaz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controladora.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Componente.h">
@@ -84,6 +90,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Venta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controladora.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

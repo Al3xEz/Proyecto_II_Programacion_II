@@ -218,9 +218,9 @@ string Tienda::mostrarVentas() //Muestra todas las ventas
 	}
 
 	//Mostramos el precio bruto total, precio neto total y las ganancias.
-	s << "-Total Bruto: " << bruto << endl << endl;
-	s << "-Total Neto: " << neto << endl << endl;
-	s << "-Ganancias: " << neto * 0.35 << endl << endl;
+	s << "-Total Bruto: " << bruto << " dolares" << endl << endl;
+	s << "-Total Neto: " << neto << " dolares" << endl << endl;
+	s << "-Ganancias: " << neto * 0.35 << " dolares" << endl << endl << endl;
 
 	return s.str();
 }

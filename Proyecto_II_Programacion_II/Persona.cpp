@@ -46,13 +46,13 @@ void Persona::setNacionalidad(string nacionalidad) { this->nacionalidad = nacion
 string Persona::toString()
 {
 	stringstream s;
-	s << "---------------CLIENTE--------------" << endl << endl;
+	s << "--------------------CLIENTE-------------------" << endl << endl;
 	s << "Cedula: " << this->cedula << endl;
 	s << "Nombre: " << this->nombreC << endl;
 	s << "Email: " << this->email << endl;
 	s << "Nacionalidad: " << this->nacionalidad << endl;
 	s << "Nombre del Pais: " << this->nombrePais << endl;
 	s << "Ciudad de Ubicacion: " << this->ciudadUbicacion << endl << endl;
-	s << "------------------------------------" << endl << endl;
+	s << "----------------------------------------------" << endl << endl;
 	return s.str();
 }
